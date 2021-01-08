@@ -56,11 +56,35 @@ class EmergencyFragment : BaseFragment() {
                     isSelected = true
                     tv_aec?.isSelected = true
                 }
+                tv_swim?.setOnClickListener {
+                    if (count == 0 || isSelected || listAttempts.contains(tv_swim?.text?.toString()))
+                        return@setOnClickListener
+                    isSelected = true
+                    tv_swim?.isSelected = true
+                }
                 tv_swim_bp?.setOnClickListener {
                     if (count == 0 || isSelected || listAttempts.contains(tv_swim_bp?.text?.toString()))
                         return@setOnClickListener
                     isSelected = true
                     tv_swim_bp?.isSelected = true
+                }
+                tv_swim_aec?.setOnClickListener {
+                    if (count == 0 || isSelected || listAttempts.contains(tv_swim_aec?.text?.toString()))
+                        return@setOnClickListener
+                    isSelected = true
+                    tv_swim_aec?.isSelected = true
+                }
+                tv_nest?.setOnClickListener {
+                    if (count == 0 || isSelected || listAttempts.contains(tv_nest?.text?.toString()))
+                        return@setOnClickListener
+                    isSelected = true
+                    tv_nest?.isSelected = true
+                }
+                tv_swim_nest?.setOnClickListener {
+                    if (count == 0 || isSelected || listAttempts.contains(tv_swim_nest?.text?.toString()))
+                        return@setOnClickListener
+                    isSelected = true
+                    tv_swim_nest?.isSelected = true
                 }
             }
         }
@@ -78,21 +102,44 @@ class EmergencyFragment : BaseFragment() {
                     listAttempts.add(this)
                 }
             }
-            if (tv_aec?.isSelected == true) {
-                tv_aec?.text?.toString()?.run {
-                    listAttempts.add(this)
-                }
-            }
+
             if (tv_swim_bp?.isSelected == true) {
-                tv_swim_bp?.text?.toString()?.run {
-                    listAttempts.add(this)
-                }
+                    tv_swim_bp?.text?.toString()?.run {
+                        listAttempts.add(this)
+                    }
+            }
+
+            if (tv_aec?.isSelected == true) {
+                    tv_aec?.text?.toString()?.run {
+                        listAttempts.add(this)
+                    }
+            }
+
+            if (tv_swim_aec?.isSelected == true) {
+                    tv_swim_aec?.text?.toString()?.run {
+                        listAttempts.add(this)
+                    }
+            }
+
+            if (tv_nest?.isSelected == true) {
+                    tv_nest?.text?.toString()?.run {
+                        listAttempts.add(this)
+                    }
+            }
+
+            if (tv_swim_nest?.isSelected == true) {
+                    tv_swim_nest?.text?.toString()?.run {
+                        listAttempts.add(this)
+                    }
+
             }
             tv_contain_stamp.text = getTextAttempt()
-            tv_na?.isSelected = false
-            tv_bp?.isSelected = false
-            tv_aec?.isSelected = false
-            tv_swim_bp?.isSelected = false
+                tv_na?.isSelected = false
+                tv_bp?.isSelected = false
+                tv_aec?.isSelected = false
+                tv_nest?.isSelected = false
+                tv_swim_bp?.isSelected = false
+                tv_swim_nest?.isSelected = false
             count--
             tv_attempt.text = "${listAttempts.size}"
             isSelected = false
