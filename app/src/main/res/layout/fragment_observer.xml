@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observers"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_marginTop="@dimen/positive_20dp"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/positive_20dp"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:layout_marginEnd="@dimen/positive_20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="MS Leader"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/positive_5dp"
+            android:id="@+id/edt_ms_leader"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/positive_10dp"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:layout_marginEnd="@dimen/positive_20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="2nd Observer"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/positive_5dp"
+            android:id="@+id/edt_2nd_observer"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/positive_10dp"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:layout_marginEnd="@dimen/positive_20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3rd Observer"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_3rd_observer"
+            android:padding="@dimen/positive_5dp"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/positive_10dp"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:layout_marginEnd="@dimen/positive_20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4th Observer"
+            android:layout_weight="1"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_4th_observer"
+            android:padding="@dimen/positive_5dp"
+            android:layout_weight="2"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weather"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_20sp"
+        android:layout_marginTop="@dimen/positive_20dp"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_sky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        android:layout_marginTop="@dimen/positive_20dp"
+        app:met_floatingLabel="none"
+        android:textColorHint="#CFD8DC"
+        android:gravity="center"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_precipitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:met_floatingLabel="none"
+        android:textColorHint="#CFD8DC"
+        android:gravity="center"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_wind_intensity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:met_floatingLabel="none"
+        android:textColorHint="#CFD8DC"
+        android:gravity="center"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_wind_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:met_floatingLabel="none"
+        android:textColorHint="#CFD8DC"
+        android:gravity="center"/>
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinner_surf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:met_floatingLabel="none"
+        android:textColorHint="#CFD8DC"
+        android:gravity="center"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_10dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:id="@+id/tv_previous"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_cancel"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_10sp"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_next"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

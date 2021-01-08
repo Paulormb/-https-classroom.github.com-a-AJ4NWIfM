@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_suspected_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/positive_5dp"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableTop="@drawable/checkbox_background"
+        android:text="No"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_suspected_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableTop="@drawable/checkbox_background"
+        android:text="Yes"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_suspected_no"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_suspected_no"
+        app:layout_constraintTop_toTopOf="@+id/ckb_suspected_no" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_suspected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suspected nest?"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_suspected_yes"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_suspected_yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckb_suspected_yes" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_suspected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ckb_suspected_no,ckb_suspected_yes,tv_suspected" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_found_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/positive_5dp"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableTop="@drawable/checkbox_background"
+        android:text="No"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_suspected" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_found_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableTop="@drawable/checkbox_background"
+        android:text="Yes"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_found_no"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_found_no"
+        app:layout_constraintTop_toTopOf="@+id/ckb_found_no" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dug and no eggs found?"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_found_yes"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_found_yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckb_found_yes" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ckb_found_no,ckb_found_yes,tv_found" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_track_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/positive_5dp"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableBottom="@drawable/checkbox_background"
+        android:text="E"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_found" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_track_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableBottom="@drawable/checkbox_background"
+        android:text="D"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_track_e"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_track_e"
+        app:layout_constraintTop_toTopOf="@+id/ckb_track_e" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_track_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableBottom="@drawable/checkbox_background"
+        android:text="C"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_track_d"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_track_d"
+        app:layout_constraintTop_toTopOf="@+id/ckb_track_d" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_track_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableBottom="@drawable/checkbox_background"
+        android:text="B"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_track_c"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_track_c"
+        app:layout_constraintTop_toTopOf="@+id/ckb_track_c" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_track_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:drawableBottom="@drawable/checkbox_background"
+        android:text="A"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_track_b"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_track_b"
+        app:layout_constraintTop_toTopOf="@+id/ckb_track_b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track type"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_track_a"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_track_a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckb_track_a" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_track"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ckb_track_e,ckb_track_d,ckb_track_c,ckb_track_b,ckb_track_a,tv_track" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_bm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/positive_5dp"
+        android:drawableTop="@drawable/checkbox_background_large"
+        android:text="3rd BM"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ckb_rbm"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_track" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_rbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/checkbox_background_large"
+        android:text="RBM"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_bm"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_bm"
+        app:layout_constraintStart_toEndOf="@+id/ckb_lbm"
+        app:layout_constraintTop_toTopOf="@+id/ckb_bm" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:id="@+id/ckb_lbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/checkbox_background_large"
+        android:text="LBM"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ckb_rbm"
+        app:layout_constraintEnd_toStartOf="@+id/ckb_rbm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ckb_rbm" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ckb_bm,ckb_rbm,ckb_lbm" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:layout_marginTop="@dimen/positive_15dp"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:background="@drawable/bg_button"
+        android:minLines="5"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_body" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/positive_20dp"
+        android:background="@android:color/white"
+        android:padding="@dimen/positive_2dp"
+        android:text="Area Diagram"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edt_area"
+        app:layout_constraintStart_toStartOf="@+id/edt_area"
+        app:layout_constraintTop_toTopOf="@+id/edt_area" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/contain_bm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/positive_5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contain_rbm"
+        app:layout_constraintTop_toBottomOf="@+id/edt_area">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/positive_5dp"
+            android:layout_marginEnd="@dimen/positive_5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Distance \nto 3rd BM"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/positive_2dp"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_2dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="metres"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_10sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/contain_rbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/contain_bm"
+        app:layout_constraintEnd_toStartOf="@+id/contain_bm"
+        app:layout_constraintStart_toEndOf="@+id/contain_lbm"
+        app:layout_constraintTop_toTopOf="@+id/contain_bm">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/positive_5dp"
+            android:layout_marginEnd="@dimen/positive_5dp"
+            android:gravity="center"
+            android:text="Distance \nto RBM"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/positive_2dp"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_2dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="metres"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_10sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/contain_lbm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/contain_rbm"
+        app:layout_constraintEnd_toStartOf="@+id/contain_rbm"
+        app:layout_constraintStart_toEndOf="@+id/contain_sea"
+        app:layout_constraintTop_toTopOf="@+id/contain_rbm">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/positive_5dp"
+            android:layout_marginEnd="@dimen/positive_5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Distance \nto LBM"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/positive_2dp"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_2dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="metres"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_10sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/contain_sea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/contain_lbm"
+        app:layout_constraintEnd_toStartOf="@+id/contain_lbm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contain_lbm">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/positive_5dp"
+            android:layout_marginEnd="@dimen/positive_5dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Distance \nto sea"
+            android:textSize="@dimen/text_size_10sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/positive_2dp"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_2dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="metres"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/text_size_10sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/bottom_metres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="contain_sea,contain_lbm,contain_rbm,contain_bm" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_world"
+        app:layout_constraintEnd_toStartOf="@+id/edt_world"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_world"
+        app:srcCompat="@drawable/ic_world" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_world"
+        android:layout_width="@dimen/positive_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/positive_5dp"
+        android:layout_marginTop="@dimen/positive_10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_metres" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_pin"
+        app:layout_constraintEnd_toStartOf="@+id/edt_pin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_pin"
+        app:srcCompat="@drawable/ic_pin" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_pin"
+        android:layout_width="@dimen/positive_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/positive_5dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_world" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_tag"
+        app:layout_constraintEnd_toStartOf="@+id/edt_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_tag"
+        app:srcCompat="@drawable/ic_tags" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_tag"
+        android:layout_width="@dimen/positive_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/positive_5dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pin" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_message"
+        app:layout_constraintEnd_toStartOf="@+id/edt_message"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_message"
+        app:srcCompat="@drawable/ic_message" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_message"
+        android:layout_width="@dimen/positive_200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/positive_20dp"
+        android:background="@drawable/bg_button"
+        android:padding="@dimen/positive_5dp"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tag" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/contain_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_10dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:id="@+id/tv_previous"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel Entry"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_cancel"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_next"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

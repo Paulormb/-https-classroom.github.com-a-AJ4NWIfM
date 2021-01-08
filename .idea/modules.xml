@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Apxeaon.iml" filepath="$PROJECT_DIR$/.idea/modules/Apxeaon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Apxeaon.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Apxeaon.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Apxeaon.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Apxeaon.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Apxeaon.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Apxeaon.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/Apxeaon.data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/Apxeaon.data.iml" />
+    </modules>
+  </component>
+</project>

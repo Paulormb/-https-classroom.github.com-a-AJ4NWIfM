@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/authenFragment">
+
+    <fragment
+        android:id="@+id/authenFragment"
+        android:name="survey.app.apxeaon.view.authen.AuthenFragment"
+        android:label="AuthenFragment"
+        tools:layout="@layout/fragment_authen">
+
+        <action
+            android:id="@+id/action_authenFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="survey.app.apxeaon.view.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_authenFragment"
+            app:destination="@id/authenFragment"
+            app:popUpTo="@id/nav_graph" />
+        <action
+            android:id="@+id/action_mainFragment_to_morningSurveyFragment"
+            app:destination="@id/morningSurveyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/morningSurveyFragment"
+        android:name="survey.app.apxeaon.view.survey.morning.MorningSurveyFragment"
+        android:label="MorningSurveyFragment"
+        tools:layout="@layout/fragment_morning_survey">
+        <action
+            android:id="@+id/action_morningSurveyFragment_to_observerFragment"
+            app:destination="@id/observerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/observerFragment"
+        android:name="survey.app.apxeaon.view.survey.observer.ObserverFragment"
+        android:label="ObserverFragment"
+        tools:layout="@layout/fragment_observer">
+        <action
+            android:id="@+id/action_observerFragment_to_msEntriesChooseFragment"
+            app:destination="@id/msEntriesChooseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/msEntriesChooseFragment"
+        android:name="survey.app.apxeaon.view.survey.choose.MsEntriesChooseFragment"
+        android:label="MsEntriesChooseFragment"
+        tools:layout="@layout/fragment_choose_ms_entries">
+        <action
+            android:id="@+id/action_msEntriesChooseFragment_to_addNewEventChooseFragment"
+            app:destination="@id/addNewEventChooseFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNewEventChooseFragment"
+        android:name="survey.app.apxeaon.view.survey.choose.AddNewEventChooseFragment"
+        android:label="AddNewEventChooseFragment"
+        tools:layout="@layout/fragment_choose_add_new_event">
+        <action
+            android:id="@+id/action_addNewEventChooseFragment_to_emergencyFragment"
+            app:destination="@id/emergencyFragment" />
+        <action
+            android:id="@+id/action_addNewEventChooseFragment_to_vandalismFragment"
+            app:destination="@id/vandalismFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emergencyFragment"
+        android:name="survey.app.apxeaon.view.survey.emergency.EmergencyFragment"
+        android:label="EmergencyFragment"
+        tools:layout="@layout/fragment_emergency">
+        <action
+            android:id="@+id/action_emergencyFragment_to_completeEmergencyFragment"
+            app:destination="@id/completeEmergencyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/completeEmergencyFragment"
+        android:name="survey.app.apxeaon.view.survey.emergency.CompleteEmergencyFragment"
+        android:label="CompleteEmergencyFragment"
+        tools:layout="@layout/fragment_complete_emergency" />
+    <fragment
+        android:id="@+id/vandalismFragment"
+        android:name="survey.app.apxeaon.view.survey.vandalism.VandalismFragment"
+        android:label="VandalismFragment"
+        tools:layout="@layout/fragment_vadalism">
+        <action
+            android:id="@+id/action_vandalismFragment_to_authenFragment2"
+            app:destination="@id/authenFragment"
+            app:popUpTo="@id/nav_graph"/>
+    </fragment>
+</navigation>

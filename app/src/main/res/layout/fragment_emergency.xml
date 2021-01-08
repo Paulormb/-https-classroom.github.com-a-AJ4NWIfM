@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Emergence number"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/line_top" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_number"
+        android:layout_width="@dimen/positive_40dp"
+        android:layout_height="@dimen/positive_40dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_number"
+        tools:text="1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time stamp here"
+        android:id="@+id/tv_title_stamp"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="NA"
+        android:id="@+id/tv_na"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_15dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_stamp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="BP"
+        android:id="@+id/tv_bp"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_na"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="AEC"
+        android:id="@+id/tv_aec"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="SWIM"
+        android:id="@+id/tv_swim"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="SWIM -> BP"
+        android:id="@+id/tv_swim_bp"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="SWIM -> AEC"
+        android:id="@+id/tv_swim_aec"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swim_bp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="NEST"
+        android:id="@+id/tv_nest"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swim_aec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_80dp"
+        android:layout_height="@dimen/positive_25dp"
+        android:text="SWIM -> NEST"
+        android:id="@+id/tv_swim_nest"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/bg_button_selector"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="@dimen/positive_30dp"
+        android:layout_height="@dimen/positive_30dp"
+        android:id="@+id/iv_add"
+        android:layout_marginTop="@dimen/positive_12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swim_nest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_clear"
+        app:srcCompat="@drawable/ic_add_circle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/positive_30dp"
+        android:layout_height="@dimen/positive_30dp"
+        android:id="@+id/tv_clear"
+        android:text="Clear"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_12dp"
+        android:textSize="@dimen/text_size_10sp"
+        android:background="@drawable/bg_circle"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/tv_swim_nest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_add" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        android:id="@+id/barrie_add_clear"
+        app:constraint_referenced_ids="tv_clear,iv_add"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/positive_5dp"
+        android:background="@drawable/bg_button"
+        android:id="@+id/tv_contain_stamp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/positive_8dp"
+        android:layout_marginStart="@dimen/positive_50dp"
+        android:layout_marginEnd="@dimen/positive_50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_attempt"
+        app:layout_constraintTop_toBottomOf="@+id/barrie_add_clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_attempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No of Attempts"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_10sp"
+        app:layout_constraintTop_toTopOf="@+id/tv_attempt"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_attempt"
+        app:layout_constraintEnd_toStartOf="@+id/tv_attempt"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_attempt"
+        android:layout_width="@dimen/positive_40dp"
+        android:layout_height="@dimen/positive_40dp"
+        android:background="@drawable/bg_button"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_30sp"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/tv_contain_stamp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_attempts"
+        app:layout_constraintBottom_toTopOf="@+id/iv_photo"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/contain_bottom"
+        app:layout_constraintEnd_toStartOf="@+id/title_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_attempt"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_10sp"
+        android:textColor="@android:color/black"
+        android:text="Photo record"
+        android:id="@+id/title_photo"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/contain_bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:background="@drawable/bg_button"
+            android:padding="@dimen/positive_10dp"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:id="@+id/tv_previous"
+            android:visibility="invisible"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel Entry"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_cancel"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textSize="@dimen/text_size_10sp"
+            android:background="@drawable/bg_button"
+            android:gravity="center"
+            android:layout_margin="@dimen/positive_10dp"
+            android:padding="@dimen/positive_10dp"
+            android:id="@+id/tv_next"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
