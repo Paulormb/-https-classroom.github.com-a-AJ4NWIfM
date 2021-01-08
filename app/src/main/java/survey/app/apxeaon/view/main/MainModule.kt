@@ -10,7 +10,7 @@ import dagger.android.support.AndroidSupportInjectionModule
 import dagger.multibindings.IntoMap
 import survey.app.data.interactor.AuthenUseCase
 import survey.app.data.interactor.SurveyUseCase
-import tran.nam.core.di.inject.ViewModelKey
+import common.survey.core.di.inject.ViewModelKey
 
 @Module(includes = [AndroidSupportInjectionModule::class, MainModule.ProvideViewModel::class])
 interface MainModule {

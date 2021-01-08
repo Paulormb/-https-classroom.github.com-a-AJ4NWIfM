@@ -6,7 +6,7 @@ import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_choose_ms_entries.*
 import survey.app.apxeaon.R
 import survey.app.apxeaon.view.main.MainActivity
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class MsEntriesChooseFragment : BaseFragment(){
 

@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_main.*
 import survey.app.apxeaon.R
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class MainFragment : BaseFragment() {
 

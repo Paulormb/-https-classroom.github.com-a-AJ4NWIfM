@@ -3,13 +3,11 @@ package survey.app.apxeaon.view.survey.emergency
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_emergency.*
 import survey.app.apxeaon.R
 import survey.app.apxeaon.view.main.MainActivity
-import survey.app.apxeaon.view.main.MainViewModel
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class EmergencyFragment : BaseFragment() {
 

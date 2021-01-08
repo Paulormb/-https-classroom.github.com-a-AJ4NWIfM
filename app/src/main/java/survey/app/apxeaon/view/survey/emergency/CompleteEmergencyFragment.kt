@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.fragment_complete_emergency.*
 import survey.app.apxeaon.R
 import survey.app.apxeaon.view.main.MainActivity
 import survey.app.apxeaon.view.main.MainViewModel
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class CompleteEmergencyFragment : BaseFragment() {
 

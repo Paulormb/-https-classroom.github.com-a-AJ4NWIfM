@@ -6,7 +6,7 @@ import android.os.Bundle
 import dagger.android.AndroidInjector
 import dagger.android.support.DaggerApplication
 import survey.app.apxeaon.di.component.DaggerApplicationComponent
-import tran.nam.common.Logger
+import common.survey.common.Logger
 
 class AppState : DaggerApplication(), Application.ActivityLifecycleCallbacks{
 

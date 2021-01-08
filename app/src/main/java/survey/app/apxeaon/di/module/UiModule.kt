@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import dagger.Module
 import dagger.Provides
-import tran.nam.core.di.AppViewModelFactory
+import common.survey.core.di.AppViewModelFactory
 import javax.inject.Provider
 
 @Module(

@@ -7,7 +7,7 @@ import android.widget.ArrayAdapter
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_morning_survey.*
 import survey.app.apxeaon.R
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class MorningSurveyFragment : BaseFragment() {
 

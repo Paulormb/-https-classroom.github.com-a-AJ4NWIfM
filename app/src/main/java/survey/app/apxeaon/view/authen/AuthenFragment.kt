@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import kotlinx.android.synthetic.main.fragment_authen.*
 import survey.app.apxeaon.R
 import survey.app.apxeaon.view.main.MainViewModel
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class AuthenFragment : BaseFragment() {
 

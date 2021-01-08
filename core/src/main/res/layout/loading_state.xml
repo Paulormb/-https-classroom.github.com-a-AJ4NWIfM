@@ -22,7 +22,7 @@
     <data>
         <variable
             name="state"
-            type="tran.nam.state.State" />
+            type="common.survey.state.State" />
     </data>
 
     <merge

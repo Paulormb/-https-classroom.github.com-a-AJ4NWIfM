@@ -7,10 +7,10 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import kotlinx.android.synthetic.main.activity_main.*
 import survey.app.apxeaon.R
-import tran.nam.common.ErrorState
-import tran.nam.core.view.BaseActivityInjection
-import tran.nam.core.viewmodel.IViewLoading
-import tran.nam.state.Status
+import common.survey.common.ErrorState
+import common.survey.core.view.BaseActivityInjection
+import common.survey.core.viewmodel.IViewLoading
+import common.survey.state.Status
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject

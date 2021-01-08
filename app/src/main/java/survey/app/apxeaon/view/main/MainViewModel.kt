@@ -3,9 +3,9 @@ package survey.app.apxeaon.view.main
 import androidx.lifecycle.LiveData
 import survey.app.data.interactor.AuthenUseCase
 import survey.app.data.interactor.SurveyUseCase
-import tran.nam.common.SingleLiveEvent
-import tran.nam.core.viewmodel.BaseViewModel
-import tran.nam.state.Loading
+import common.survey.common.SingleLiveEvent
+import common.survey.core.viewmodel.BaseViewModel
+import common.survey.state.Loading
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor(private val mUseCaseAuthen: AuthenUseCase,private val mUseSurveyUseCase: SurveyUseCase) : BaseViewModel() {

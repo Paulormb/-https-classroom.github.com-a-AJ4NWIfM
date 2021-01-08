@@ -9,7 +9,7 @@ import survey.app.apxeaon.R
 import survey.app.apxeaon.view.main.MainActivity
 import survey.app.apxeaon.view.main.MainViewModel
 import survey.app.apxeaon.view.survey.emergency.EmergencyFragment.Companion.ARG_TYPE
-import tran.nam.core.view.BaseFragment
+import common.survey.core.view.BaseFragment
 
 class AddNewEventChooseFragment : BaseFragment() {
 
