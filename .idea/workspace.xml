@@ -18,12 +18,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39bcce91-1cc9-4e5c-928a-81e65cc57fbb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/tran/nam/common/ErrorCode.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/tran/nam/common/ErrorResponse.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/tran/nam/common/ErrorState.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/tran/nam/common/Logger.java" beforeDir="false" />
-    </list>
+    <list default="true" id="39bcce91-1cc9-4e5c-928a-81e65cc57fbb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,10 +206,10 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="0" y="128" key="IDE.errors.dialog/0.23.1280.733@0.23.1280.733" timestamp="1610073985110" />
-    <state x="102" y="98" key="RollbackChangesDialog" timestamp="1610079536498">
+    <state x="102" y="98" key="RollbackChangesDialog" timestamp="1610080462327">
       <screen x="0" y="23" width="1280" height="735" />
     </state>
-    <state x="102" y="98" key="RollbackChangesDialog/0.23.1280.735@0.23.1280.735" timestamp="1610079536498" />
+    <state x="102" y="98" key="RollbackChangesDialog/0.23.1280.735@0.23.1280.735" timestamp="1610080462327" />
     <state x="0" y="119" key="Vcs.Push.Dialog.v2" timestamp="1610074960448">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
@@ -224,5 +219,10 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="166" y="299" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.733@0.23.1280.733" timestamp="1610073993599" />
+    <state x="135" y="23" width="598" height="735" key="find.popup" timestamp="1610080428582">
+      <screen x="0" y="23" width="1280" height="736" />
+    </state>
+    <state x="135" y="23" width="598" height="735" key="find.popup/0.23.1280.735@0.23.1280.735" timestamp="1610080222237" />
+    <state x="135" y="23" width="598" height="735" key="find.popup/0.23.1280.736@0.23.1280.736" timestamp="1610080428582" />
   </component>
 </project>
