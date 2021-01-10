@@ -82,17 +82,18 @@
         app:layout_constraintBottom_toTopOf="@+id/tv_login" />
 
     <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingStart="@dimen/positive_20dp"
-        android:paddingEnd="@dimen/positive_20dp"
-        android:paddingTop="@dimen/positive_10dp"
-        android:paddingBottom="@dimen/positive_10dp"
-        android:id="@+id/tv_login"
-        android:text="Login"
         android:background="@drawable/bg_button"
-        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="@dimen/positive_20dp"
+        android:paddingTop="@dimen/positive_10dp"
+        android:paddingEnd="@dimen/positive_20dp"
+        android:paddingBottom="@dimen/positive_10dp"
+        android:text="Login"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_pass"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pass" />
 </androidx.constraintlayout.widget.ConstraintLayout>
